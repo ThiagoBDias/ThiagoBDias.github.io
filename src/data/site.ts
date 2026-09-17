@@ -10,7 +10,7 @@
 
   author: "Thiago Dias",
 
-  url: "https://www.thiagodias.dev",
+  url: "https://thiagobdias.github.io",
 
   image: "/og-image.png",
 

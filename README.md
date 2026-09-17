@@ -28,7 +28,7 @@ Para auditar o código ou rodar a interface localmente:
 
 ```bash
 # Clone o repositório
-git clone [https://github.com/ThiagoBDias/portifolio.git](https://github.com/ThiagoBDias/portifolio.git)
+git clone [thiagobdias.github.io](https://thiagobdias.github.io)
 
 # Instale as dependências
 cd portifolio
