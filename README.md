@@ -1,6 +1,6 @@
 # 💻 Thiago Dias | Engenheiro de Software & Analista de Sistemas
 
-> Portfólio focado em performance, entrega estática otimizada e arquitetura limpa. Disponível em: [www.thiagodias.dev](https://www.thiagodias.dev)
+> Portfólio focado em performance, entrega estática otimizada e arquitetura limpa. Disponível em: [www.thiagodias.dev](https://thiagobdias.github.io)
 
 Este repositório contém o código-fonte da minha aplicação de apresentação técnica. O objetivo aqui não é o espetáculo visual, mas a demonstração de pragmatismo. Como profissional focado em ecossistemas densos (C#, .NET, Java e integrações ERP), construí esta interface para ser um catálogo rápido, direto e de alta disponibilidade para os meus projetos.
 
