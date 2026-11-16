@@ -1,27 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { siteConfig } from '../data/site';
 import StatsCounter from '../components/StatsCounter.astro';
 
 // Usando dados locais diretamente para garantir que apareçam
 
 // Dados completos e atualizados
 const data = {
-	bio: 'Sou um profissional de tecnologia guiado pela resolução de problemas reais. Minha base foi construída no "chão de fábrica" da TI: atuando diretamente com infraestrutura, gerenciamento de redes (Mikrotik) e análise de dados (SQL). Possuo experiência sólida com o ERP Sankhya, compreendendo não apenas a camada técnica de suporte, mas o impacto direto que a estabilidade do sistema possui no faturamento e na operação da empresa. Minha vivência em ambientes de alta criticidade e controle de operações me ensinou a lidar com pressão, priorizar incidentes com lógica e garantir que a operação nunca pare. Meu foco é atuar na linha de frente do suporte avançado e implantação de sistemas, unindo meu background técnico a um atendimento humano e resolutivo.',
+	bio: 'Sou formado em Análise e Desenvolvimento de Sistemas pelo IFTM, com experiência em suporte técnico, ERP Sankhya, SQL, Oracle e desenvolvimento de relatórios. Também atuei no controle operacional de mineração, onde conheci na prática os desafios da gestão de frotas e dos sistemas operacionais. Atualmente desenvolvo projetos backend com C#, ASP.NET Core, Entity Framework Core, PostgreSQL e Docker. O FleetControl nasceu dessa experiência e é um projeto em desenvolvimento voltado à gestão de operações de mineração. Busco oportunidades em desenvolvimento de software, suporte técnico e análise de sistemas.',
 	profileImage: '',
 	skills: {
-		sistemas: ['Suporte a ERP (Sankhya)', 'Sustentação Operacional e Implantação', 'Análise de Dados e SQL', 'Regra de Negócio'],
+		sistemas: ['Suporte a ERP (Sankhya)', 'Sustentação Operacional e Implantação', 'SQL e Oracle', 'JasperReports e iReport', 'Power BI', 'Regras de negócio'],
 		infraestrutura: ['Resolução de Incidentes (Troubleshooting)', 'Gestão de Redes e Mikrotik', 'Manutenção de Hardware e Software', 'Telecomunicações'],
-		desenvolvimento: ['C# e Lógica Orientada a Objetos', 'JavaScript, Node.js e React', 'Power BI e Data Analysis', 'Microsoft Azure']
+		desenvolvimento: ['C# e .NET', 'ASP.NET Core e APIs REST', 'Entity Framework Core', 'PostgreSQL e PostGIS', 'Docker e Git']
 	},
 	experience: [
 		{
-			year: '2023 - Presente',
+			year: '2026',
+			position: 'Controlador Operacional',
+			company: 'Fagundes',
+			period: 'dez 2025 - out 2026',
+			description: 'Monitoramento de equipamentos e operações de mineração, controle de alocações e viagens, correção de inconsistências nos apontamentos e elaboração de relatórios operacionais.'
+		},
+		{
+			year: '2023',
 			position: 'Assistente de TI',
 			company: 'Grupo Lidon',
-			period: 'set 2023 - o momento',
+			period: 'set 2023 - 2025',
 			location: 'Patrocínio, Minas Gerais, Brasil',
 			type: 'Tempo integral',
-			description: 'Suporte técnico avançado, sustentação de ERP Sankhya, resolução de incidentes críticos. Atuo na linha de frente garantindo estabilidade operacional, análise de dados com SQL e implantação de soluções que impactam diretamente o faturamento da empresa.'
+			description: 'Suporte técnico e sustentação do ERP Sankhya, consultas SQL em Oracle, desenvolvimento e manutenção de relatórios com JasperReports e iReport e atendimento aos usuários.'
 		},
 		{
 			year: '2023',
@@ -175,20 +183,12 @@ const data = {
 			image: ''
 		}
 	],
-	gallery: [
-		{
-			title: 'Projeto Exemplo',
-			image: '',
-			description: 'Descrição da imagem'
-		}
-	],
 	socialLinks: {
-		github: 'https://github.com/ThiagoBDias',
-		linkedin: '',
+		github: siteConfig.social.github,
+		linkedin: siteConfig.social.linkedin,
 		twitter: '',
-		email: 'thiagobatistadiasss@gmail.com',
-		city: 'Patrocínio, MG',
-		phone: '+55 (34) 99999-9999'
+		email: siteConfig.contact.email,
+		city: siteConfig.contact.location
 	}
 };
 
@@ -197,9 +197,14 @@ const data = {
 
 <Layout 
 	title="Sobre - Thiago Dias" 
-	description="Thiago Dias - Analista de Suporte e Sustentação de Sistemas com experiência em ERP Sankhya, SQL, análise de dados, infraestrutura e redes. Especializado em resolução de incidentes e suporte técnico avançado."
+	description="Thiago Dias — desenvolvimento backend C#/.NET, APIs REST, SQL e experiência em ERP Sankhya e suporte técnico."
 	keywords={[
 		'sobre thiago dias',
+		'C#',
+		'.NET',
+		'ASP.NET Core',
+		'PostgreSQL',
+		'PostGIS',
 		'analista de suporte',
 		'sustentação de sistemas',
 		'ERP Sankhya',
@@ -224,7 +229,7 @@ const data = {
 						Sobre Mim
 					</h1>
 					<h2 class="text-2xl md:text-3xl text-gray-300 mb-6 font-light">
-						Thiago Dias - Analista de Suporte e Sustentação de Sistemas
+						Thiago Dias — Desenvolvedor Backend C#/.NET
 					</h2>
 					<div class="space-y-4 text-gray-400 text-lg leading-relaxed">
 						<p>{data.bio}</p>
@@ -294,7 +299,7 @@ const data = {
 					Minhas Habilidades
 				</h2>
 				<p class="text-gray-400 text-lg max-w-2xl mx-auto">
-					Tecnologias e ferramentas que domino para criar soluções completas
+					Tecnologias e ferramentas que utilizo em projetos e na minha trajetória profissional
 				</p>
 			</div>
 
@@ -370,7 +375,7 @@ const data = {
 					Jornada Profissional
 				</h2>
 				<p class="text-gray-400 text-lg">
-					Minha trajetória no mundo do desenvolvimento
+					Minha trajetória em tecnologia e operações
 				</p>
 			</div>
 
@@ -405,6 +410,7 @@ const data = {
 							<div class="flex-grow bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50">
 								<h3 class="text-xl font-semibold text-white mb-2">{experience.position || 'Cargo'}</h3>
 								<p class="text-primary-400 mb-3 font-medium">{experience.company || 'Empresa'}</p>
+								<p class="text-gray-400 text-sm mb-2">{experience.period}</p>
 								<p class="text-gray-400 leading-relaxed">{experience.description || 'Descrição da experiência'}</p>
 							</div>
 						</div>
@@ -599,68 +605,6 @@ const data = {
 						<p class="text-gray-400 leading-relaxed">{value.description}</p>
 					</div>
 				))}
-			</div>
-		</div>
-	</section>
-
-	<!-- Gallery Section -->
-	<section class="py-20 bg-gray-900/50">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="text-center mb-16">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary-400 to-accent-cyan bg-clip-text text-transparent">
-					Galeria
-				</h2>
-				<p class="text-gray-400 text-lg max-w-2xl mx-auto">
-					Alguns momentos e projetos que capturam minha jornada no desenvolvimento
-				</p>
-			</div>
-
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{(data.gallery || []).length > 0 ? (
-					data.gallery.map((item: any, index: number) => (
-						<div class="group relative overflow-hidden rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 hover:border-primary-500/50 transition-all duration-300">
-							<div class="aspect-square overflow-hidden">
-								{item.image ? (
-									<img
-										src={item.image}
-										alt={item.title || `Imagem ${index + 1}`}
-										class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-									/>
-								) : (
-									<div class="w-full h-full bg-gradient-to-br from-primary-900/20 to-accent-cyan/20 flex items-center justify-center">
-										<svg class="w-16 h-16 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-										</svg>
-									</div>
-								)}
-							</div>
-							{(item.title || item.description) && (
-								<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-									<div class="p-6 text-white">
-										{item.title && (
-											<h3 class="text-xl font-semibold mb-2">{item.title}</h3>
-										)}
-										{item.description && (
-											<p class="text-gray-300 text-sm leading-relaxed">{item.description}</p>
-										)}
-									</div>
-								</div>
-							)}
-						</div>
-					))
-				) : (
-					<div class="col-span-full text-center py-12">
-						<div class="w-16 h-16 bg-gradient-to-r from-primary-500/20 to-accent-cyan/20 rounded-full flex items-center justify-center mx-auto mb-4">
-							<svg class="w-8 h-8 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-							</svg>
-						</div>
-						<h3 class="text-xl font-semibold text-white mb-2">Galeria em Breve</h3>
-						<p class="text-gray-400">
-							Adicione imagens à sua galeria através do painel administrativo (/admin)
-						</p>
-					</div>
-				)}
 			</div>
 		</div>
 	</section>

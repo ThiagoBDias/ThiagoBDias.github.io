@@ -1,4 +1,5 @@
-﻿export const siteConfig = {
+﻿
+export const siteConfig = {
   name: "Thiago Dias",
 
   role: "Desenvolvedor Backend C#/.NET",
@@ -6,7 +7,7 @@
   title: "Thiago Dias | Desenvolvedor Backend C#/.NET",
 
   description:
-    "Desenvolvedor Backend C#/.NET com foco em ASP.NET Core, APIs REST, SQL e arquitetura limpa para construir soluções confiáveis.",
+    "Desenvolvimento Backend com C#, ASP.NET Core, APIs REST e bancos de dados. Experiência profissional em ERP Sankhya, suporte técnico e sistemas operacionais.",
 
   author: "Thiago Dias",
 
@@ -24,9 +25,17 @@
     "API REST",
     "SQL",
     "SQL Server",
+    "PostgreSQL",
+    "PostGIS",
+    "Oracle",
     "Entity Framework Core",
+    "Docker",
+    "Git",
     "Clean Architecture",
     "ERP Sankhya",
+    "JasperReports",
+    "Suporte Técnico",
+    "Análise de Sistemas",
     "Regras de negócio"
   ],
 
@@ -36,13 +45,9 @@
   },
 
   contact: {
-    email: "thiagobatistadiasss@gmail.com",
+    email: "thiagobatistadiass@gmail.com",
     location: "Patrocínio, MG"
   }
 } as const;
 
-/**
- * Alias mantido para consumo simplificado
- * em componentes e layouts.
- */
 export const site = siteConfig;

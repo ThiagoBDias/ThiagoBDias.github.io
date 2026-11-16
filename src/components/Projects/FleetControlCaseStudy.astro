@@ -34,7 +34,8 @@ const badges = [
   '.NET 8',
   'ASP.NET Core',
   'Entity Framework Core',
-  'SQL Server',
+  'PostgreSQL',
+  'PostGIS',
   'Docker',
   'JWT',
   'Swagger',
@@ -74,8 +75,8 @@ const architecture = [
     detail: 'Persistência e integrações'
   },
   {
-    name: 'SQL Server',
-    detail: 'Banco de dados'
+    name: 'PostgreSQL + PostGIS',
+    detail: 'Dados relacionais e geoespaciais'
   }
 ];
 
@@ -105,7 +106,7 @@ const challenges = [
 const learnings = [
   'Modelagem de domínio baseada em processos operacionais reais.',
   'Construção de APIs REST com ASP.NET Core.',
-  'Persistência e relacionamentos utilizando Entity Framework Core e SQL Server.',
+  'Persistência e relacionamentos utilizando Entity Framework Core, PostgreSQL e PostGIS.',
   'Separação de responsabilidades entre Domain, Application e Infrastructure.',
   'Documentação de endpoints e contratos utilizando Swagger.',
   'Evolução do projeto de requisitos e modelagem até implementação e deploy.'
@@ -241,13 +242,13 @@ const learnings = [
 
         <a
           class="case-button case-button-secondary"
-          href="https://github.com/ThiagoBDias"
+          href="https://github.com/ThiagoBDias/fleetcontrol"
           target="_blank"
           rel="noopener noreferrer"
           data-track="project_github"
           data-project-name="FleetControl API"
         >
-          Ver perfil no GitHub
+          Ver repositório no GitHub
 
           <Code2
             size={16}
@@ -387,7 +388,7 @@ const learnings = [
                   aria-hidden="true"
                 />
 
-                SQL Server
+                PostgreSQL + PostGIS
               </span>
 
               <span>
